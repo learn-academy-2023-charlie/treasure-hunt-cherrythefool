@@ -15,8 +15,14 @@ const App = () => {
     "?"
   ])
 
+  // const treasureNumber = () => {
+  //   return Math.ceil(Math.random()*9)
+  // }
+
   const handleClick = (selectedIndex) => {
-    alert(selectedIndex)
+    const newBoard = [...board]
+    newBoard[selectedIndex] = "🌳"
+    setBoard(newBoard)
   }
 
   return (
